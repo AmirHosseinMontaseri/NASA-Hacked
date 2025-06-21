@@ -78,7 +78,7 @@ window.addEventListener('load', () => {
             document.body.style.overflow = 'auto';
             lazyLoadImages();
         }, 1000);
-    }, 2000);
+    }, 800);
 });
 
 
