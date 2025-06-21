@@ -1,0 +1,282 @@
+<!-- site.html -->
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/files/pictures/ic2.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/files/pictures/ic2.ico">
+  <title>سایت ناسا</title>
+
+  <!-- استایل بادی -->
+  <link rel="stylesheet" href="Body Base Styles.css">
+
+  <!-- استایل هدر -->
+  <link rel="stylesheet" href="Header Styles.css">
+
+  <!-- کتابخونه فونت آسوم -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    /* فونت */
+    @font-face {
+      font-family: font;
+      src: url(/files/fonts/Negaar.ttf);
+    }
+
+    * {
+      direction: rtl;
+      font-family: font;
+    }
+  </style>
+</head>
+
+<body class="bga">
+
+  <!-- لود اسکیرین -->
+  <div class="loading-screen">
+    <span>در حال بارگذاری<span class="dots"></span></span>
+  </div>
+
+  <!-- بخش هدر ------------>
+  <header>
+    <nav class="nav">
+      <div class="title">
+        <a href="#"><img src="/files/pictures/welcom.png" alt="" class="N"></a>
+      </div>
+      <div class="icon-bar" onclick="toggleSidebar()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- سایدبار -->
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <h2>منو</h2>
+    <ul class="meno">
+      <li class="tab-ha tab" id="tab-1">خانه</li>
+      <li class="tab-ha tab" id="tab-2">برای استادان</li>
+      <li class="tab-ha tab" id="tab-3">عکس های برتر</li>
+      <li class="about-us tab" id="tab-4">در باره ما</li>
+    </ul>
+  </div>
+
+
+  <!-- بخش اصلی ------->
+  <div class="content">
+
+    <!-- خوش آمد گویی -->
+    <div id="content-1" class="content-tab">
+      <h2 class="matn">خوش آمدید به سایت ناسا!</h2>
+      <p class="oldparent">
+      <div class="welcomP">
+        <div class="welcom">
+          این جا مدرسه ی غزاله!</div>
+      </div>
+      </p>
+
+    </div>
+    <!-- بخش عکس های معلم ها  -->
+    <div id="content-2" class="content-tab">
+      <h2 class="matn">به تمام استادان مدرسه ی غزال خوش آمد می گویم.</h2>
+      <p class="khasteh">خسته <b style="background-color:#003366 ; border-radius: 10px;color: white;">نباشید </b>
+      </p>
+      <div class="clean-hr"></div>
+      <p>
+        <img src="/files/pictures/pic.jpg" alt="ali" class="pic-ostad">
+        <img src="/files/pictures/pic2.jfif" alt="ali" class="pic-ostad">
+        <img src="/files/pictures/pic3.jpg" alt="ali" class="pic-ostad">
+      </p>
+      <br>
+      </p>
+    </div>
+
+    <!-- perfect photos -->
+    <div id="content-3" class="content-tab">
+      <h2 class="matn underline">لذت ببرید</h2>
+
+      <div class="gallery" id="gallery">
+        <!-- عکس‌ها اینجا تولید میشن -->
+      </div>
+
+      <!-- لایت‌باکس -->
+      <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="lightbox">
+      </div>
+
+      <div class="clean-hr"></div>
+
+    </div>
+    <!-- درباره ما -->
+    <div id="content-4" class="content-tab">
+      <h2 class="title-matn">اما ما کیستیم؟</h2><br>
+
+      <p class="base-matn">سوال خیلی جالبی هست اما باید بگویم، دنیا هنوز برای جواب این سوال آماده نیست ،اما تلاشتون
+        ستودنی بود ولی خب.</p>
+
+      <h3 class="title-matn">ما گروه هکری غزال هستیم</h3>
+
+      <div class="clean-hr"></div>
+
+      <img class="main-pic" src="/files/pictures/ghazal.jpg" alt="gagal">
+
+      <p class="base-matn"> قبل از همه چیز باید از گروه <span class=" mohem">ناسا</span> یک تشکر ویژه ای بکنم
+        که این سایت رو
+        ساختن و بعد ما یعنی گروه
+        هکری غزال آن را مورد هک و نفوذ قرار داده و آن را در نهایت هک کرده، اگر شما صاحب این سایت بوده اید باید بگویم که
+        این سایت مال شما بوده ولی در حال حاضر نیست اگر خواستید آن را پس بگیرید خودتان یک فکری بکنید.</p>
+
+      <div class="clean-hr"></div>
+
+      <p class="base-matn">بگذریم ، میخواستم از <span class=" mohem">رؤساء گروه هکریه غزال</span> یعنی <span
+          class=" mohem">آقای وحید سفید(Walter White)</span> و <span class=" mohem">جاسم مرد
+          صورتی(Jesse Pinkman)</span> تشکر کنم بابت زحماتی که کشیدند برای گروه.</p>
+
+      <img class="main-pic" src="/files/pictures/boss.avif" alt="hitler">
+
+      <p class="base-matn">همچنین از سرمایه گذار این پروژه تشکر بسیاری می ورزم!</p>
+
+      <img class="main-pic" src="/files/pictures/hero.jpg" alt="real hero">
+
+      <p class="base-matn">اما یک نفر هنوز مانده، بله درست حدس زدید ، بنیان گذار این گروه و رئیس کل این گروه <span
+          class=" mohem">آقای دکتر اتابکی</span>
+      </p>
+
+      <img class="main-pic" src="/files/pictures/ahhhhh.png" alt="?">
+      <div class="clean-hr"></div>
+      <!-- دکمه‌های اشتراک‌گذاری -->
+      <div class="social-share">
+        <p style="font-size: 1.3rem;">این صفحه را به اشتراک بگذارید:</p>
+        <div class="share-buttons">
+          <a href="#" class="share-btn twitter" onclick="shareOnTwitter()"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="share-btn whatsapp" onclick="shareOnWhatsApp()"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="share-btn telegram" onclick="shareOnTelegram()"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const photos = [
+      'files/gagal/1.jpg',
+      'files/gagal/2.jpg',
+      'files/gagal/3.jpg',
+      'files/gagal/4.jpeg',
+      'files/gagal/5.jpg',
+      'files/gagal/6.jpg',
+      'files/gagal/7.jpg',
+      'files/gagal/8.jpg',
+      'files/gagal/9.jpg',
+      'files/gagal/10.jpg',
+      'files/gagal/11.jpg',
+      'files/gagal/12.jpg',
+      'files/gagal/13.jpg',
+      'files/gagal/14.png',
+      'files/gagal/15.jpg',
+      'files/gagal/16.jpg',
+      'files/gagal/17.jpg',
+      'files/gagal/18.jpg',
+      'files/gagal/19.jpg',
+      'files/gagal/20.jpg',
+      'files/gagal/21.jpg',
+      'files/gagal/22.jpg',
+      'files/gagal/23.jpg',
+      'files/gagal/24.jpg',
+      'files/gagal/25.jpg',
+      'files/gagal/26.jpg',
+      'files/gagal/27.jpg',
+      'files/gagal/28.jpg',
+      'files/gagal/29.jpg',
+      'files/gagal/30.jpg',
+    ];
+
+    const likedImages = JSON.parse(localStorage.getItem("likedImages") || "[]");
+    const gallery = document.getElementById("gallery");
+
+    photos.forEach((src, index) => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "photo";
+      wrapper.setAttribute('data-aos', 'fade-up');
+      wrapper.innerHTML = `
+            <img src="${src}" alt="photo-${index}">
+            <div class="actions">
+              <button class="like-btn ${likedImages.includes(index) ? 'liked' : ''}" data-id="${index}">
+                <i class="fas fa-heart"></i>
+              </button>
+              <a href="${src}" download class="download-btn">
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          `;
+      gallery.appendChild(wrapper);
+    });
+
+    // لایک
+    gallery.addEventListener("click", (e) => {
+      if (e.target.closest(".like-btn")) {
+        const btn = e.target.closest(".like-btn");
+        const id = parseInt(btn.dataset.id);
+
+        if (likedImages.includes(id)) {
+          likedImages.splice(likedImages.indexOf(id), 1);
+          btn.classList.remove("liked");
+        } else {
+          likedImages.push(id);
+          btn.classList.add("liked");
+
+          const heart = document.createElement("div");
+          heart.className = "heart-float";
+          heart.innerHTML = `<i class="fas fa-heart"></i>`;
+          btn.closest(".photo").appendChild(heart);
+          setTimeout(() => heart.remove(), 1000);
+        }
+
+        localStorage.setItem("likedImages", JSON.stringify(likedImages));
+      }
+    });
+
+    // لایت‌باکس
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox .close");
+
+    gallery.addEventListener("click", (e) => {
+      const img = e.target.closest("img");
+      if (img && !e.target.closest(".actions")) {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+      document.body.style.overflow = "auto";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  </script>
+
+</body>
+
+</html>

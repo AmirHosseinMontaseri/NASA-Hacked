@@ -1,0 +1,210 @@
+/* Header Styles.css */
+
+
+/* اصل نویگیتور */
+.nav {
+    background-color: #003366;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.N {
+    width: 250px;
+}
+
+.title {
+    margin-right: 5px;
+    padding-top: 10px;
+}
+
+.icon-bar {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    margin-right: auto;
+}
+
+.bar1 {
+    width: 35px;
+    height: 6px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+.bar2 {
+    width: 35px;
+    height: 5px;
+    background-color: #ecf0f1;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+.bar3 {
+    width: 35px;
+    height: 4.5px;
+    background-color: #bdc3c7;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+/* وفتی روس سه خطه میزنی */
+.icon-bar:hover {
+    transform: scale(1.1);
+}
+
+/* سایدبار */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease;
+    z-index: 1000;
+    padding: 30px;
+}
+
+.meno {
+    display: flex;
+    flex-direction: column;
+    height: 91%;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.tab-ha {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.tab:hover {
+    color: #0077ff;
+    transform: scale(1.05);
+}
+
+.about-us {
+    padding: 15px 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-top: 1px solid #eee;
+    transition: all 0.3s ease-in-out;
+    margin-top: auto;
+}
+
+.about-us:hover {
+    color: #0077ff;
+    transform: scale(1.05);
+}
+
+.close-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+/* ریسپانسیو 1000 ------*/
+
+@media (max-width: 1000px) {
+    .N {
+        width: 200px;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+
+/* ریسپانسیو 700 ------*/
+
+@media (max-width: 768px) {
+    .bar1 {
+        width: 30px;
+        height: 5px;
+    }
+
+    .bar2 {
+        width: 30px;
+        height: 4px;
+    }
+
+    .bar3 {
+        width: 30px;
+        height: 4px;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+    }
+
+    .tab-ha,
+    .about-us {
+        font-size: 1.3rem;
+    }
+
+}
+
+/* ریسپانسیو 480 ------*/
+
+@media (max-width: 480px) {
+    .bar1 {
+        width: 25px;
+        height: 4px;
+        margin: 5px 0;
+    }
+
+    .bar2 {
+        width: 25px;
+        height: 4px;
+        margin: 5px 0;
+    }
+
+    .bar3 {
+        width: 25px;
+        height: 4px;
+        margin: 4px 0;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 18px;
+        font-size: 1.6rem;
+    }
+
+    .N {
+        width: 160px;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+
+
+}
